@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lone.ly</title>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDZrTBN5wVAQ4U2msqmKCIGgURfoclBQOI",
+    authDomain: "lone-ly-97556.firebaseapp.com",
+    databaseURL: "https://lone-ly-97556.firebaseio.com",
+    projectId: "lone-ly-97556",
+    storageBucket: "lone-ly-97556.appspot.com",
+    messagingSenderId: "978551577420"
+  };
+  firebase.initializeApp(config);
+</script>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+<body>
+  <div id="home-start">
+    <h2 id = "h2firstpage">Your Credentials</h2>
+  
+    <p id = "pfirstpage">Your Screen Name:  <input id="input" /></p>
+
+   <button onclick={signInAnonymously()}>Enter</button>
+    <button id="sign-out" onclick={firebase.auth().signOut()}>Sign Out</button>
+  </div>
+  
+  <div id="cat-page" class="container">
+      <div class="jumbotron">
+        <h3 id="best-line">Lonely? Sign in to start talking to another person like you today</h3>     
+        <div>
+          <p>Global Chat:</p>
+          <div id="globalchat">
+            <p></p>
+          </div>
+        </div>
+        <p id="areyou">Are You ....</p>
+       <div id="buttons"> 
+        <button id= sadbutton><a href="/sad">Sad ?</a></button>
+         <button id= brokebutton><a href="/broke">Broke ?</a></button>
+          <button id= madbutton><a href="/mad">Angry ?</a></button>
+           <button id= lonelybutton><a href="/lonely">Lonely ?</a></button>
+            <button id= arousedbutton><a href="/aroused">Aroused ?</a></button>
+        </div>
+        
+      </div>
+  </div>  
+
+  <script src="js/users.js"></script>
+  <script src="js/brokeChat.js"></script>
+</body>
+</html>
+
+
+

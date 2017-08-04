@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDZrTBN5wVAQ4U2msqmKCIGgURfoclBQOI",
+    authDomain: "lone-ly-97556.firebaseapp.com",
+    databaseURL: "https://lone-ly-97556.firebaseio.com",
+    projectId: "lone-ly-97556",
+    storageBucket: "",
+    messagingSenderId: "978551577420"
+  };
+  firebase.initializeApp(config);
+</script>
+  
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body id="cat-page">
+    <div class="container">
+      <div class="jumbotron">
+        <h3 id="best-line">Lonely? Pick a category and start talking to another person like you today</h3>     
+        <p id="areyou">Are You ....</p>
+       <div id="buttons"> 
+        <button id= sadbutton><a href="/sad">Sad ?</a></button>
+         <button id= brokebutton><a href="/broke">Broke ?</a></button>
+          <button id= madbutton><a href="/mad">Angry ?</a></button>
+           <button id= lonelybutton><a href="/lonely">Lonely ?</a></button>
+            <button id= arousedbutton><a href="/aroused">Aroused ?</a></button>
+        </div>
+        
+      </div>
+    </div>
+    
+      <script src="js/users.js"></script>
+  </body>
+</html>

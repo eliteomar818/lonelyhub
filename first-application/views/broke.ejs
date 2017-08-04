@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <h1>lone.ly</h1>
+            
+            <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDZrTBN5wVAQ4U2msqmKCIGgURfoclBQOI",
+    authDomain: "lone-ly-97556.firebaseapp.com",
+    databaseURL: "https://lone-ly-97556.firebaseio.com",
+    projectId: "lone-ly-97556",
+    storageBucket: "lone-ly-97556.appspot.com",
+    messagingSenderId: "978551577420"
+  };
+  firebase.initializeApp(config);
+</script>            
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body id="brokepage">
+        <h3>Welcome to the BROKE chat room</h3>
+        <p>Please be nice!</p>
+        <h5>Messages:</h5>
+        <div class="container">
+            <div class="jumbotron">
+                <% var userKeys = Object.keys(messages) %>
+                <% userKeys.forEach(function(userId) { %>
+                    <% var messageKeys = Object.keys(messages[userId]) %>
+                    <% messageKeys.forEach(function(messageKey) { %>
+                        <div>
+                            <p><%= messages[userId][messageKey].name %></p>
+                            <p><%= messages[userId][messageKey].text %></p>
+                            <p><%= messages[userId][messageKey].time %></p>
+                        </div>
+                    <% }) %>    
+                <% }) %>
+            </div>
+        </div>
+        
+        <p>Enter your Message   <input id = "sendBMessage" /></p>
+        <button class="btn btn-primary" onclick="{addBMessage()}">Send</button>
+        
+        <script src="js/brokeChat.js"></script>
+    </body>
+</html>

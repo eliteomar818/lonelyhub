@@ -1,0 +1,97 @@
+body {
+ background-image: url("http://2.bp.blogspot.com/-PVkRopWE1G4/TxPKs_AZUNI/AAAAAAAAE9Q/YMgCFuiQFTo/s1600/A-very-lonely-man..jpg");
+ font-family: "Comic Sans MS", cursive, sans-serif;
+ text-align: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+} 
+#areyou {
+ font-family: 'Lobster', cursive;
+ font-size: 60px;
+ padding-bottom: 60px;
+}
+#buttons{
+ padding-bottom: 75px;
+}
+#sadbutton{
+ height:50px;
+ width:100px;
+ font-size: 30px;
+}
+#brokebutton{
+ height:50px;
+ width:110px;
+ font-size: 30px;
+}
+#madbutton{
+ height:50px;
+ width:120px;
+ font-size: 30px;
+}
+#arousedbutton{
+ height:50px;
+ width:145px;
+ font-size: 30px;
+}
+#lonelybutton{
+ height:50px;
+ width:110px;
+ font-size: 30px;
+}
+#best-line{
+  font-family: 'Lobster', cursive;
+  font-size: bold;
+  font-size: 40px;
+  padding-bottom: 300px;
+}
+#h1firstpage{
+ font-size:60px;
+ font-family: 'Lobster', cursive;
+
+}
+#h2firstpage{
+ font-size:30px;
+ font-family: 'Lobster', cursive;
+
+}
+#input{
+ font-family: 'Roboto', sans-serif;
+ font-size: 17px;
+}
+#pfirstpage {
+ font-size: 25px;
+ font-family: 'Lobster', cursive;
+}
+
+#cat-page {
+ background-image: url("https://thelanternofknowledge.files.wordpress.com/2014/03/lonely-boy.jpg");
+ font-family: 'Lobster', cursive;
+ font-size: 36%;
+ text-align: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+} 
+#arousedpage{
+background-image: url("https://s5.favim.com/orig/69/finger-girl-lips-photography-Favim.com-653459.jpg");
+}
+
+#brokepage{
+ background-image: url("http://epmgaa.media.clients.ellingtoncms.com/img/photos/2014/07/17/going-broke.jpg");
+}
+
+#madpage{
+ background-image: url("https://s-media-cache-ak0.pinimg.com/originals/9b/76/6b/9b766b7c8b51fd6545ab1c68ed5bad4a.jpg");
+}
+#lonelypage{
+ background-image: url("http://a57.foxnews.com/images.foxnews.com/content/fox-news/opinion/2017/04/07/letter-to-lonely/_jcr_content/par/featured-media/media-0.img.jpg/876/493/1491598153252.jpg?ve=1&tl=1")
+}
+
+#sadpage{
+ background-image: url("http://www.top5masala.com/wp-content/uploads/2017/06/happy-sad.jpeg");
+}
+
+#sign-out{
+ margin-left:47%
+}
