@@ -46,7 +46,8 @@
         
         <p>Enter your Message   <input id = "sendAMessage" /></p>
         <button class="btn btn-primary" onclick="{addAMessage()}">Send</button>
-        
+            <button id="sign-out" onclick={firebase.auth().signOut()}>Sign Out</button>
+
         <script src="js/arousedChat.js"></script>
     </body>
 </html>
