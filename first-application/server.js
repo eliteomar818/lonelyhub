@@ -39,21 +39,72 @@ app.get('/anon', function(request, response){
         response.render('anon.ejs')        
     // })
 })
+
 app.get('/mad', function(request, response){
         
-        response.render('mad.ejs')        
-    // })
+        var messagesRef = database.ref('messages/madchat')
+        
+        messagesRef.once('value', function(snapshot){
+            var messageObject = snapshot.val()
+            
+            console.log(messageObject)
+            
+            if (!messageObject){
+                messageObject = {
+                    'fakeId': {
+                        what: 'Nothing yet'
+                    }
+                }
+            }
+            
+            response.render('mad.ejs', { messages: messageObject })
+        })
 })
+
+
 app.get('/sad', function(request, response){
         
-        response.render('sad.ejs')        
-    // })
-})
-app.get('/lonely', function(request, response){
+        var messagesRef = database.ref('messages/sadchat')
         
-        response.render('lonely.ejs')        
-    // })
+        messagesRef.once('value', function(snapshot){
+            var messageObject = snapshot.val()
+            
+            console.log(messageObject)
+            
+            if (!messageObject){
+                messageObject = {
+                    'fakeId': {
+                        what: 'Nothing yet'
+                    }
+                }
+            }
+            
+            response.render('sad.ejs', { messages: messageObject })
+        })
 })
+
+
+app.get('/lonely', function(request, response){
+        var messagesRef = database.ref('messages/lonelychat')
+        
+        messagesRef.once('value', function(snapshot){
+            var messageObject = snapshot.val()
+            
+            console.log(messageObject)
+            
+            if (!messageObject){
+                messageObject = {
+                    'fakeId': {
+                        what: 'Nothing yet'
+                    }
+                }
+            }
+            
+            response.render('lonely.ejs', { messages: messageObject })
+        })
+})
+
+
 app.get('/broke', function(request, response){
         var messagesRef = database.ref('messages/brokechat')
         
@@ -73,11 +124,30 @@ app.get('/broke', function(request, response){
             response.render('broke.ejs', { messages: messageObject })
         })
 })
+
+
+
 app.get('/aroused', function(request, response){
         
-        response.render('aroused.ejs')        
-    // })
+        var messagesRef = database.ref('messages/arousedchat')
+        
+        messagesRef.once('value', function(snapshot){
+            var messageObject = snapshot.val()
+            
+            console.log(messageObject)
+            
+            if (!messageObject){
+                messageObject = {
+                    'fakeId': {
+                        what: 'Nothing yet'
+                    }
+                }
+            }
+            
+            response.render('aroused.ejs', { messages: messageObject })
+        })
 })
+
 app.get('/cat', function(request, response){
         
         response.render('cat.ejs')        

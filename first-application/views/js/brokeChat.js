@@ -3,7 +3,7 @@ function addBMessage(content){
 	
 	var user = firebase.auth().currentUser
 	var userId = user.uid
-	var displayName = user.displayName
+	var displayName = localStorage.getItem('displayName')
 	
 	var messageRef = database.ref('/messages/brokechat').child(userId)
 	

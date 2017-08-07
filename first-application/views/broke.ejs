@@ -36,9 +36,8 @@
                     <% var messageKeys = Object.keys(messages[userId]) %>
                     <% messageKeys.forEach(function(messageKey) { %>
                         <div>
-                            <p><%= messages[userId][messageKey].name %></p>
-                            <p><%= messages[userId][messageKey].text %></p>
-                            <p><%= messages[userId][messageKey].time %></p>
+                            <p><%= messages[userId][messageKey].name %> : <%= messages[userId][messageKey].text %> - <%= messages[userId][messageKey].time %></p>
+                    
                         </div>
                     <% }) %>    
                 <% }) %>

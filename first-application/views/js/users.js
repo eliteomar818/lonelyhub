@@ -1,5 +1,7 @@
          signInAnonymously
 function signInAnonymously(){
+    var displayName = document.getElementById('input').value
+    localStorage.setItem('displayName', displayName)
     firebase.auth().signInAnonymously()
     .then(function(res){
         console.log(res)
